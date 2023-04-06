@@ -1,0 +1,152 @@
+footer {
+	padding: 80px 135px 24px 135px;
+	background-color: $black;
+	
+	.container {
+		.footer__items {
+			display: flex;
+			gap: 85px;
+			.footer__item__exclusive {
+				h4 {
+					margin: 0;
+					font-family: 'Inter', sans-serif;
+					font-size: min(24px, max(12px + 2vw));
+					font-weight: 700;
+					line-height: 24px;
+					letter-spacing: 2%;
+					color: $mediumWhite;
+				}
+
+				a {
+					display: block;
+					text-decoration: none;
+					margin: 24px 0px;
+					font-size: min(20px, max(10px + 2vw));
+					font-weight: 500;
+					line-height: 28px;
+					color: $mediumWhite;
+				}
+
+				a{
+					p {
+						margin: 0;
+						font-size: min(16px, max(8px + 2vw));
+						font-weight: 400;
+						line-height: 24px;
+						color: $mediumWhite;
+					}
+				}
+
+				form {
+					width: fit-content;
+					position: relative;
+					
+					input {
+						padding: 10px 10px;
+						border-radius: $br;
+						background-color: $black;
+						color: $mediumWhite;
+						opacity: 0.4;
+						border: 1px solid white;
+						font-size: min(12px, max(6px + 2vw));
+
+						&::placeholder {
+							color: $mediumWhite;
+							opacity: 0.4;
+							font-size: min(13px, max(6.5px + 2vw));
+							font-weight: 400;
+							line-height: 24px;
+						}
+					}
+
+					.inInput {
+						display: block;
+							
+						svg {
+							position: absolute;
+							cursor: pointer;
+							top: 6px;	
+							right: 5px;			
+						}
+					}
+				}
+			}
+
+			.footer__item {
+
+				h4 {
+					margin: 0px 0px 24px 0px;
+					font-size: min(20px, max(10px + 2vw));
+					font-weight: 500;
+					line-height: 28px;
+					color: $mediumWhite;
+				}
+
+				a {
+					display: block;
+					margin-bottom: 16px;
+					text-decoration: none;
+					font-size: min(16px, max(8px + 2vw));
+					font-weight: 400;
+					line-height: 24px;
+					color: $mediumWhite;
+
+					&:last-child {
+						margin-bottom: unset;
+					}
+				}
+			}
+
+			.footer__item__download {
+
+				h4 {
+					margin: 0px 0px 24px 0px;
+					font-size: min(20px, max(10px + 2vw));
+					font-weight: 500;
+					line-height: 28px;
+					color: $mediumWhite;
+				}
+
+				span {
+					display: block;
+					font-size: min(12px, max(6px + 2vw));
+					font-weight: 500;
+					line-height: 18px;
+					color: $mediumWhite;
+					opacity: 0.7;
+					margin-bottom: 12px;
+				}
+
+				.qr {
+
+					display: flex;
+					gap: 13px;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 31px;
+					
+					.qr__right {
+						display: flex;
+						flex-direction: column;
+					}
+				}
+
+				.icons {
+					display: flex;
+					align-items: center;
+					gap: 30px;
+				}
+			}
+		}
+	}
+
+	p {
+		margin: 70px 0px 0px 0px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $white;
+		opacity: 0.5;
+	}
+}
