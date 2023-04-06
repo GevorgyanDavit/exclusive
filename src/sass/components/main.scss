@@ -407,14 +407,14 @@ main {
 						span {
 							display: block;							
 							&:first-child {
-								font-size: 16px;
+								font-size: min(16px, max(8px + 2vw));
 								font-weight: 600;
 								line-height: 13px;
 								color: $black;
 							}
 
 							&:last-child {
-								font-size: 11px;
+								font-size: min(11px, max(5.5px + 2vw));
 								font-weight: 400;
 								line-height: 18px;
 								color: $black;
@@ -451,6 +451,21 @@ main {
 				img {
 					width: 100%;
 					height: 100%;
+				}
+			}
+
+			@media screen and (max-width:940px) {
+				flex-wrap: wrap;
+
+				.ics__left {
+					text-align: center;
+
+					a {
+						padding: 8px 30px;
+						font-size: 10px;
+					}
+
+					
 				}
 			}
 		}
